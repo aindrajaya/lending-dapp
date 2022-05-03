@@ -1,0 +1,26 @@
+{
+  "name": "p2p",
+  "version": "1.0.0",
+  "description": "this is the trial project to learn p2p lending dapp works",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "truffle-hdwallet-provider": "^1.0.17",
+    "web3": "^1.5.3"
+  },
+  "scripts": {
+    "test": "truffle test",
+    "compile": "truffle compile",
+    "migrate": "npm run migrate:ropsten",
+    "migrate:dev": "rm -rf build/ && truffle migrate --reset --compile-all --network development"
+  },
+  "keywords": [
+    "dapp",
+    "lending",
+    "p2p",
+    "peer-to-peer"
+  ],
+  "author": "aindrajaya",
+  "license": "ISC"
+}
