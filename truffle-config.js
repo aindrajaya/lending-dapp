@@ -12,11 +12,11 @@ module.exports = {
       network_id: "*",
       networkCheckTimeout: 999999
     },
-   test: {
-     host: "127.0.0.1",
-     port: 7545,
-     network_id: "*"
-   }
+  //  test: {
+  //    host: "127.0.0.1",
+  //    port: 7545,
+  //    network_id: "*"
+  //  }
   },
   //
   // Truffle DB is currently disabled by default; to enable it, change enabled:
