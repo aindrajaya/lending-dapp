@@ -97,7 +97,7 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    git clone https://github.com/aindrajaya/lending-dapp.git
    ```
-2. Install the dependencies, for the **root** project and **frontend** folder. If you have any problems to install, you can use `--force` after `npm install`
+2. Install the dependencies, for the **root** project and ~~**frontend**~~ folder. If you have any problems to install, you can use `--force` after `npm install`
    ```sh
    npm install
    ```
@@ -113,7 +113,7 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    npm run migrate:dev
    ```  
-6. Go to the **Frontend** folder, and make sure the dependencies installed properly, and then run the frontend application
+6. ~~Go to the **Frontend** folder, and make sure the dependencies installed properly, and then run the frontend application~~
    ```sh
    cd frontend
    npm run start
