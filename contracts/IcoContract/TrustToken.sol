@@ -38,7 +38,7 @@ contract TrustToken is EIP20Interface {
   event Transfer(address indexed _from, address indexed _to, uint256 _value);
   event Approval(address indexed _owner, address indexed _spender, uint256 _value);
   //Track Participation & ICO Status
-  event Particpated();
+  event Participated();
   event ICOFinished();
 
   constructor(
@@ -48,7 +48,7 @@ contract TrustToken is EIP20Interface {
     string memory _tokenSymbol
   ) public{
     name = _tokenName;
-    decimals = _decimalsUnits;
+    decimals = _decimalUnits;
     symbol = _tokenSymbol;
     totalSupply = _initialAmount.mul(10 ** uint256(decimals));
     isIcoActive = true;
@@ -69,7 +69,7 @@ contract TrustToken is EIP20Interface {
     * @notice Locks the token of '_user'
     * @param _user Address of user to lock
     */
-  function lockUser(address _user) externalCalledByProposalManagement returns(bool){
+  function lockUser(address _user) external calledByProposalManagement returns(bool){
     isUserLocked[_user] = true;
     return isUserLocked[_user];
   }
@@ -106,7 +106,7 @@ contract TrustToken is EIP20Interface {
       isTrustee[msg.sender] = true;
     }
 
-    emit Particpated();
+    emit Participated();
 
     if(contractEtherBalance >= goal){       //distributed token after goal was reached
       isIcoActive = false;
@@ -221,7 +221,7 @@ contract TrustToken is EIP20Interface {
     icoParticipantCount = participants.length;
     tokenSymbol = symbol;
     tokenBalanceUser = balanceOf(msg.sender);
-    etherBalanceUser = getEtherBalances();
+    etherBalanceUser = getEthereBalances();
     icoName = name;
     numDecimals = decimals;
     numTrustees = trusteeCount;
@@ -238,7 +238,7 @@ contract TrustToken is EIP20Interface {
     * @notice Distribute tokenSupply between all Trustees
     */
   function distributeToken() private {
-    for(uint256 l; i<participants.length; i++){
+    for(uint256 i; i<participants.length; i++){
       tokenBalances[participants[i]] = (etherBalances[participants[i]].mul(totalSupply)).div(contractEtherBalance);
       emit Transfer(address(this), participants[i], tokenBalances[participants[i]]);
     }
