@@ -53,7 +53,7 @@
 ## About the Lending dApps (Decentralized Applications)
 [![Product Name Screen Shot][product-screenshot]](https://aindrajaya.github.io/lending-dapp)
 
-So this project is my result of my [Project-based learning](https://www.pblworks.org/what-is-pbl) to explore more deep about variety of smart contracts for DAO (Decentralized Autonomous Organisation) focusing on a decentralized peer-to-peer lending that build on [Ethereum](https://ethereum.org/en/) networks, and to know on how the simple example Ethereum blockchain integration on the website application with another case by building an example of **peer-to-peer lending dApp**.
+So this project is the  DAO (Decentralized Autonomous Organisation) focusing on a decentralized peer-to-peer lending that build on [Ethereum](https://ethereum.org/en/) networks, and the simple example Ethereum blockchain integration on the website application with another case by building an example of **peer-to-peer lending dApp**.
 
 Here's why and my purpose for this Learning Repository:
 * Lending app is the common case study to learn on how the Finance Technology works
