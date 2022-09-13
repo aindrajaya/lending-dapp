@@ -113,9 +113,10 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    npm run migrate:dev
    ```  
-6. ~~Go to the **Frontend** folder, and make sure the dependencies installed properly, and then run the frontend application~~
+6. Go to the **frontend/** folder, and make sure the dependencies installed properly, and then run the frontend application
    ```sh
    cd frontend
+   npm install
    npm run start
    ```
 7. You can import the private key from ganache/ganache-cli into your Metamask Wallet by copy the private key.
